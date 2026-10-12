@@ -1,0 +1,48 @@
+# gradle
+.gradle/
+build/
+out/
+classes/
+
+# eclipse
+*.launch
+
+# idea
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+.settings/
+.vscode/
+bin/
+.classpath
+.project
+
+# macos
+*.DS_Store
+
+# fabric run directories
+run/
+
+# java dumps
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
+
+# local emote sources (third-party / private art — never commit)
+scripts/raw_emotes/*
+!scripts/raw_emotes/convert.bat
+!scripts/raw_emotes/.gitkeep
+!scripts/raw_emotes/README.md
+
+# generated / private pack textures (bring your own)
+src/main/resources/assets/minemotes/textures/emotes/**
+!src/main/resources/assets/minemotes/textures/emotes/.gitkeep
+src/main/resources/assets/minemotes/textures/emotes_animated/
+
+# built resource packs / zips
+*.zip
+!gradle/wrapper/gradle-wrapper.jar

@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.thatnubarin.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"AbstractSignEditScreenMixin",
+		"ChatScreenMixin",
+		"FontMixin",
+		"SignRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

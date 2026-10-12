@@ -1,0 +1,52 @@
+{
+	"schemaVersion": 1,
+	"id": "minemotes",
+	"version": "${version}",
+	"name": "Minemotes",
+	"description": "Custom chat and sign emotes for Fabric — bring your own emote pack.",
+	"authors": [
+		"uhhrin"
+	],
+	"contact": {
+		"homepage": "https://github.com/uhhrin/minemotes",
+		"sources": "https://github.com/uhhrin/minemotes",
+		"issues": "https://github.com/uhhrin/minemotes/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minemotes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.thatnubarin.Minemotes",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.thatnubarin.MinemotesClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "com.thatnubarin.MinemotesDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"minemotes.mixins.json",
+		{
+			"config": "minemotes.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
+		"java": ">=21",
+		"fabric-api": ">=${fabric_api_version}",
+		"fabric-language-kotlin": ">=${fabric_kotlin_version}"
+	}
+}
